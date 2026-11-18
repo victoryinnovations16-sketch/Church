@@ -60,7 +60,7 @@ export default function AdminEvents() {
   });
 
   const form = useForm<InsertEvent>({
-    resolver: zodResolver(insertEventSchema),
+    resolver: zodResolver(insertEventSchema) as any,
     defaultValues: {
       title: "",
       description: "",

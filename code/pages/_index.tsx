@@ -5,7 +5,7 @@ import { Button } from "../components/UiButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/UiCard";
 import { Badge } from "../components/UiBadge";
 import { Calendar, Clock, Users, ArrowRight, Video, BookOpen, Flame, Quote } from "lucide-react";
-import { Link } from "react-router-dom";
+import { SiteLink as Link } from "../components/SiteLink";
 import { useQuery } from "@tanstack/react-query";
 import type { Event } from "../helpers/siteSchema";
 

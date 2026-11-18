@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer";
 import { Card, CardContent } from "../components/UiCard";
 import { Button } from "../components/UiButton";
 import { Baby, Sparkles, Users, HandHeart, Music, BookOpen, Heart, GraduationCap, Briefcase, Globe, Flower2 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { SiteLink as Link } from "../components/SiteLink";
 
 export default function Ministry() {
   return (

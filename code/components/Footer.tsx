@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { SiteLink as Link } from "./SiteLink";
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin, Clock } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 const logoImage = "/_cdn/static/logo_1767634535083.png";

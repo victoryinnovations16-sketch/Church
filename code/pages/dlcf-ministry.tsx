@@ -308,16 +308,16 @@ export default function DLCFMinistry() {
                           </div>
                         )}
 
-                        <a 
+                        <Button asChild className="bg-amber-600 hover:bg-amber-700 text-white" data-testid="button-join-meeting">
+                          <a 
                           href={`https://zoom.us/j/${event.zoomId}`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Button className="bg-amber-600 hover:bg-amber-700 text-white" data-testid="button-join-meeting">
                             <ExternalLink className="h-4 w-4 mr-2" />
                             Join Meeting
-                          </Button>
-                        </a>
+                          </a>
+                        </Button>
                       </CardContent>
                     </div>
                   </Card>

@@ -7,7 +7,7 @@ import {
   BookOpen, ChevronLeft, ChevronRight, ArrowLeft,
   Download, Maximize, Minimize
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { SiteLink as Link } from "../components/SiteLink";
 import HTMLFlipBook from "react-pageflip";
 const pdfFile = "/_cdn/static/Combined_Service_8th_Feb_1770490712382.pdf";
 const churchLogo = "/_cdn/static/logo_1767634535083.png";

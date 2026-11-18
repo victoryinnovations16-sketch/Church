@@ -7,7 +7,8 @@ import { Clock, MapPin, Mail, ArrowLeft, Users, Phone, Calendar, BookOpen } from
 import { useQuery } from "@tanstack/react-query";
 import type { Location as ChurchLocation } from "../helpers/siteSchema";
 import { Skeleton } from "../components/UiSkeleton";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { SiteLink as Link } from "../components/SiteLink";
 const fridayPrayerImage = "/_cdn/static/Friday_Prayer_1767660261541.jpg";
 const bibleStudyImage = "/_cdn/static/Bible_Study_2026_1767660337989.jpg";
 

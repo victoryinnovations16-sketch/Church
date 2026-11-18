@@ -7,7 +7,7 @@ import {
   BookOpen, ChevronLeft, ChevronRight, ArrowLeft,
   Download, Loader2, Maximize, Minimize
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { SiteLink as Link } from "../components/SiteLink";
 import HTMLFlipBook from "react-pageflip";
 import * as pdfjsLib from "pdfjs-dist";
 
@@ -65,7 +65,7 @@ export default function CombinedServiceBooklet() {
     const loadPdf = async () => {
       try {
         setLoading(true);
-        const loadingTask = pdfjsLib.getDocument(pdfFile);
+        const loadingTask = pdfjsLib.getDocument({ url: pdfFile });
         const pdf = await loadingTask.promise;
         const numPages = pdf.numPages;
         setTotalPages(numPages);

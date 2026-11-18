@@ -115,7 +115,7 @@ export default function AdminHeroSlides() {
   });
 
   const form = useForm<HeroSlideInput>({
-    resolver: zodResolver(insertHeroSlideSchema),
+    resolver: zodResolver(insertHeroSlideSchema) as any,
     defaultValues: {
       title: "",
       subtitle: null,

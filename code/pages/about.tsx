@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/UiCard";
 import { Button } from "../components/UiButton";
 import { Heart, BookOpen, Users, Star, Target, Award, Baby, Sparkles, HandHeart, Mail, Phone, MapPin, Clock } from "lucide-react";
-import { Link } from "react-router-dom";
+import { SiteLink as Link } from "../components/SiteLink";
 
 export default function About() {
   return (

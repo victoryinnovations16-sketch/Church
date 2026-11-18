@@ -664,16 +664,16 @@ export default function ChildrenMinistry() {
                       <Badge variant="outline" className="border-green-400 text-green-600 dark:text-green-400">Films</Badge>
                       <Badge variant="outline" className="border-purple-400 text-purple-600 dark:text-purple-400">Sing Along</Badge>
                     </div>
-                    <a 
+                    <Button asChild className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white" data-testid="button-join-bible-study">
+                      <a 
                       href="https://zoom.us/j/83486339797"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white" data-testid="button-join-bible-study">
                         <Video className="h-4 w-4 mr-2" />
                         Join on Zoom
-                      </Button>
-                    </a>
+                      </a>
+                    </Button>
                   </CardContent>
                 </div>
               </Card>
@@ -867,16 +867,16 @@ export default function ChildrenMinistry() {
               </Collapsible>
 
               <div className="text-center pt-4">
-                <a 
+                <Button asChild variant="outline" className="border-purple-400 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20">
+                  <a 
                   href="https://dclm.org/tender-life-magazine/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="outline" className="border-purple-400 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20">
                     <BookMarked className="h-4 w-4 mr-2" />
                     Read More Stories
-                  </Button>
-                </a>
+                  </a>
+                </Button>
               </div>
             </div>
           </div>

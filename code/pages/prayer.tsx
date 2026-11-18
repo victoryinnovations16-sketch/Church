@@ -19,7 +19,7 @@ type PrayerFormData = z.infer<typeof publicPrayerRequestSchema>;
 export default function Prayer() {
   const { toast } = useToast();
   const form = useForm<PrayerFormData>({
-    resolver: zodResolver(publicPrayerRequestSchema),
+    resolver: zodResolver(publicPrayerRequestSchema) as any,
     defaultValues: {
       name: "",
       email: "",

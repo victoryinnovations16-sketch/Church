@@ -1,4 +1,5 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { SiteLink as Link } from "./SiteLink";
 import { Button } from "./UiButton";
 import {
   NavigationMenu,
@@ -491,7 +492,7 @@ export function Header() {
                   {locations.map((loc) => {
                     const slug = loc.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
                     return (
-                      <Link key={loc.id} href={`/locations/${slug}`}>
+                      <Link key={loc.id} to={`/locations/${slug}`}>
                         <div
                           className="flex items-center gap-2 py-2 px-2 text-sm transition-colors hover:text-blue-400 text-slate-400 cursor-pointer"
                           onClick={() => setMobileMenuOpen(false)}

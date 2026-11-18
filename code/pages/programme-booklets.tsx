@@ -4,7 +4,7 @@ import { Button } from "../components/UiButton";
 import { BookOpen, Download, Calendar, Church, Users, Baby, Heart, Music, ArrowRight } from "lucide-react";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { Link } from "react-router-dom";
+import { SiteLink as Link } from "../components/SiteLink";
 
 const pdfFile = "/_cdn/static/Combined_Service_8th_Feb_1770490712382.pdf";
 

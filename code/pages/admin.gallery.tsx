@@ -122,7 +122,7 @@ export default function AdminGallery() {
   });
 
   const form = useForm<GalleryImageInput>({
-    resolver: zodResolver(insertGalleryImageSchema),
+    resolver: zodResolver(insertGalleryImageSchema) as any,
     defaultValues: {
       title: "",
       description: null,

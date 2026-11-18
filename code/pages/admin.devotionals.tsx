@@ -31,7 +31,7 @@ export default function AdminDevotionals() {
   });
 
   const form = useForm<InsertDevotional>({
-    resolver: zodResolver(insertDevotionalSchema),
+    resolver: zodResolver(insertDevotionalSchema) as any,
     defaultValues: {
       title: "",
       scripture: "",

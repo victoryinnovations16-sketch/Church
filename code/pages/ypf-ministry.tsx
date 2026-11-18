@@ -270,16 +270,16 @@ export default function YPFMinistry() {
                         )}
 
                         {event.rsvpLink && (
-                          <a 
+                          <Button asChild className="bg-green-600 hover:bg-green-700 text-white" data-testid="button-rsvp">
+                            <a 
                             href={event.rsvpLink}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <Button className="bg-green-600 hover:bg-green-700 text-white" data-testid="button-rsvp">
                               <ExternalLink className="h-4 w-4 mr-2" />
                               RSVP Now
-                            </Button>
-                          </a>
+                            </a>
+                          </Button>
                         )}
                       </CardContent>
                     </div>
